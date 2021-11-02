@@ -1,0 +1,21 @@
+
+body {
+
+
+    padding: 20px;
+    margin: 20px;
+    background-image: url("https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHx8&w=1000&q=80");
+    background-color: #cccccc;
+}
+
+#fm {
+
+
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    background: linear-gradient(27deg, #00BFFF 50%, #87CEEB 50%);
+
+}
