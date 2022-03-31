@@ -1,0 +1,892 @@
+1.
+
+class PrintMessage{
+    public static void main(String[] args){
+        System.out.println("Welcome to Java world");
+    }
+}
+
+-------------------------------------------
+
+2.
+
+
+import java.util.Scanner;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Applicant name");
+		String str=sc.nextLine();
+		System.out.println("Marks obtained in HSC"); 
+		int num=sc.nextInt();
+		System.out.println("Total possible marks in HSC"); 
+		int num1=sc.nextInt(); 
+		System.out.println("Engineering cutoff mark"); 
+		float num2=sc.nextFloat(); 
+		System.out.println("Marks obtained in SSLC"); 
+		int num3=sc.nextInt(); 
+		System.out.println("Total possible marks in SSLC");
+		int num4=sc.nextInt(); 
+		System.out.println("Gender"); 
+		char ch=sc.next().charAt(0); 
+		System.out.println("Your Application has been Submitted Successfully"); 
+		System.out.println("The name of the applicant: "+str);
+		System.out.println("Engineering Cutoff: "+num2);
+		System.out.println("Applicant gender: "+ch);
+		System.out.println("All the best for your Career");
+		//Fill code here 
+	}
+}
+
+
+--------------------------------------------------------------------
+
+3.
+
+import java.util.Scanner;
+import java.util.*;
+
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		//Fill code here 
+		
+		
+		System.out.println("Runs scored ");
+		double a = sc.nextDouble();
+		System.out.println("Boundaries scored ");
+		double b = sc.nextDouble();
+		System.out.println("Sixers scored ");
+		double c = sc.nextDouble();
+		
+		int run =(int)(a-((b*4)+(c*6)));
+		
+	    double q =100*((a-run)/a);
+	    double h = Math.round(q);
+	    
+	    System.out.println("Runs scored running between wickets " +run);
+		System.out.printf("Percentage of runs scored running between wickets %.2f",h);
+	}
+}
+
+--------------------------------------------------------------------------------------
+
+4
+
+import java.util.Scanner;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		//Fill code here 
+		System.out.println("Enter Population before 10 years");
+		int x = sc.nextInt();
+		System.out.println("Enter Population after 10 years");
+		int y = sc.nextInt();
+		
+		
+		    
+		    int m = (int)(y-x);
+		    int n = (int)(((y-x)*100)/x);
+		    int p = (int)((n)/10);
+		
+		    
+		
+		System.out.println("Population before 10 years " +x);
+		System.out.println("Population after 10 years "  +y);
+		System.out.println("Increase in population between 10 years" +m);
+		System.out.println("Percentage of population increase in 10 years" +n);
+		System.out.println("Percentage of population increase in a year" +p);
+		    
+		
+	
+	}
+}
+
+--------------------------------------------------------------------------------------
+
+5.
+
+import java.util.Scanner; 
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        //Fill code here 
+        System.out.println("Enter the alphabet");
+        String s = sc.nextLine();
+        switch(s)
+        {
+            case "A" :
+                System.out.println("A for Apple"); break;
+                case "B" :
+                    System.out.println("B for Ball"); break;
+                    case "C" :
+                        System.out.println("C for Cat"); break;
+                        case "D" :
+                            System.out.println("D for Dog"); break;
+                            case "E" :
+                                System.out.println("E for Elephant"); break;
+                                default:
+                                System.out.println(s + " is an invalid input");
+            
+        }
+        sc.close();
+        
+    }
+    
+}
+
+-------------------------------------------------------------------------------------
+
+6.
+
+import java.util.Scanner; 
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        //Fill code here 
+        System.out.println("Enter Alex points"); 
+        int a = sc.nextInt();
+        if(a < 0 || a > 50)
+        System.out.println(a + " is an invalid number"); 
+        System.out.println("Enter Nikil points");
+        int b = sc.nextInt(); if(b < 0 || b > 50)
+        System.out.println(b + " is an invalid number"); 
+        System.out.println("Enter Sam points");
+        int c = sc.nextInt(); if(c < 0 || c > 50)
+        System.out.println(c + " is an invalid number"); 
+        if(a > b && a > c )
+        System.out.println("Alex scored "+a+" points and won the game");
+        else if(b > c )
+        System.out.println("Nikil scored "+b+" points and won the game"); 
+        else
+        System.out.println("Sam scored "+c+" points and won the game"); sc.close();
+        
+    }
+    
+}
+
+--------------------------------------------------------------------------------------
+
+7.
+
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+       Scanner sc=new Scanner(System.in);
+       
+        //Fill the code here
+        String s=sc.nextLine();
+        int i =0;
+        while(s.charAt(i)!=':')
+        {
+            i++;
+        }
+        i++;
+        if((s.charAt(i)-'0') < 0)
+        System.out.println("Invalid input for number of adults");
+        else if((s.charAt(i+2)-'0') < 0)
+        System.out.println("Invalid input for number of children");
+        else if((s.charAt(i+4)-'0') <= 0)
+        System.out.println("Invalid input for number of days");
+        i = 0;
+        while(s.charAt(i) != ':')
+        {
+            System.out.print(s.charAt(i));
+            i++;
+        }
+        i++;
+        System.out.println(" your booking is confirmed and the total cost is Rs"
+        +((((s.charAt(i)-'0')*1000 + (s.charAt(i+2)-'0')*650))*(s.charAt(i+4)-'0')));
+        
+    }
+}
+
+-------------------------------------------------------------------------------------
+
+8.
+
+import java.util.Scanner; 
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        LinkedHashMap<Float,String> hm=new LinkedHashMap<Float,String>(); 
+        System.out.println("Enter the number of teams");
+        int t = sc.nextInt();
+        if(t<=1)
+        { 
+            System.out.println("Invalid input"); System.exit(0);
+            
+        }
+        float min_sum =Float.MAX_VALUE; int m= t;
+        float sum=0;
+        System.out.println("Enter the details"); 
+        for(int k=0;k<t;k++)
+        {
+            sum=0;
+            String str=sc.next(); String arr1[]= str.split(":"); int n =arr1.length;
+            float arr[]=new float[4];
+            arr[0]=Float.parseFloat(arr1[1]);
+            arr[1]=Float.parseFloat(arr1[2]);
+            arr[2]=Float.parseFloat(arr1[3]);
+            arr[3]=Float.parseFloat(arr1[4]);
+            if(arr[0]<1.0 || arr[1]<1.0 || arr[2]<1.0 || arr[3]<1.0)
+            {
+                System.out.println("Invalid number");
+                return;
+                
+            }
+            sum = arr[0]+arr[1]+arr[2]+arr[3]; 
+            hm.put(sum,arr1[0]);
+            for(int i=0;i<t;i++)
+            {
+                if(sum<min_sum) min_sum=sum;
+                
+            }
+            
+        }
+        String minKey= hm.get(min_sum);
+        if(minKey.equals("Prince"))
+        {
+            System.out.printf("King"+" team wins the race in %.2f minutes",min_sum);
+            
+        }
+        else
+        {
+            System.out.printf(minKey+" team wins the race in %.2f minutes",min_sum);
+            
+        }
+        
+    }
+    
+}
+
+--------------------------------------------------------------------------------------
+
+9.
+
+import java.util.*;
+public class Main{
+    static String sortString(String str) {
+        char []arr = str.toCharArray();
+        Arrays.sort(arr);
+        return String.valueOf(arr);
+}
+public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the sentence");
+    String str= sc.nextLine();
+     String arr1[]= str.split(" ");
+    int n =arr1.length;
+    for(int j=0;j<n;j++){
+    char[] chars = arr1[j].toCharArray();
+    for(char c : chars){
+        if(Character.isDigit(c)){
+            System.out.print(str+" is an invalid input");
+        return;
+        }
+    }
+    }
+    String arr[]=new String[n];
+    for(int i=0;i<n;i++){
+        arr[i]=sortString(arr1[i]);
+        System.out.print(arr[i]+" ");
+    }
+    
+}
+}
+
+--------------------------------------------------------------------------------------
+
+10.
+
+import java.util.Scanner;
+
+public class Main{
+    
+    public static void main(String[] args){
+        
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the array size");
+       int len=sc.nextInt();
+       if(len%2!=0 || len<2) {
+           System.out.println(len+" is an invalid number");
+       }
+       else{
+       int i,j;
+       int arr[]=new int[10000];
+       System.out.println("Enter the number");
+       for(i=0;i<len;i++){
+           arr[i]=sc.nextInt();
+       }
+       
+       for(i=0;i<len-1;i++){
+           for(j=0;j<len-i-1;j++){
+               if(arr[j]>arr[j+1]){
+                   int  temp=arr[j];
+                   arr[j]=arr[j+1];
+                   arr[j+1]=temp;
+               }
+           }
+       }
+       int res=-9999;
+        i=0;j=len-1;
+       while(i<j){
+           int s=arr[i]+arr[j];
+           if(s>res) res=s;
+           i+=1;
+           j-=1;
+       }
+       System.out.println("The maximum number is "+res);
+        
+       }
+    }
+}
+
+---------------------------------------------------------------------------------
+
+11.
+
+import java.util.regex.*;
+
+
+public class CustomerDetails {
+    private String customerId;
+    private String customerName;
+    private long phoneNumber;
+    private String emailId;
+    private String toyType;
+    private double price;
+
+
+
+    public String getCustomerId(){return customerId;}
+    public void setCustomerId(String i){ customerId = i;}
+    public String getCustomerName(){return customerName;}
+    public void setCustomerName(String n){customerName = n;}
+    public Long getPhoneNumber(){return phoneNumber;}
+    public void setPhoneNumber(Long p){phoneNumber = p;}
+    public String getEmailId(){return emailId;}
+    public void setEmailId(String e){emailId = e;}
+    public String getToyType(){return toyType;}
+    public void setToyType(String tt){toyType = tt;}
+    public double getPrice(){return price;}
+    public void setPrice(double p){price = p;}
+
+    public CustomerDetails(String customerId,String customerName,long phoneNumber,String
+            emailId, String toyType,double price)
+    {
+        this.customerId=customerId;
+        this.customerName=customerName;
+        this.phoneNumber=phoneNumber;
+        this.emailId=emailId;
+        this.toyType=toyType;
+        this.price=price;
+    }
+
+    public boolean validateCustomerId() {
+        String customerId=getCustomerId();
+        String pattern = "Incredible/[0-9]{3}/[0-9]{4}";
+        Pattern r = Pattern.compile(pattern);
+        Matcher m = r.matcher(customerId);
+        if(m.find())
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public double calculateDiscount() {
+        Double price = getPrice();
+        String toyType = getToyType();
+        toyType=toyType.toLowerCase();
+        int dis = 0;
+        switch (toyType){
+            case "softtoys":
+                dis=5;
+                break;
+            case "fidgettoys":
+                dis=10;
+                break;
+            case "sensorytoys":
+                dis=15;
+                break;
+            case "puzzles":
+                dis=20;
+                break;
+        }
+
+        return (price-(price*dis/100));
+    }
+
+}
+
+main.java
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	     Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Customer Id");
+        String customerId=sc.next();
+        System.out.println("Enter Customer Name");
+        String customerName=sc.next();
+        System.out.println("Enter Phone Number");
+        long phoneNumber=sc.nextLong();
+        System.out.println("Enter Email Id");
+        String emailId=sc.next();
+        System.out.println("Enter type");
+        String toyType=sc.next();
+        System.out.println("Enter Price");
+        double price = Double.parseDouble(sc.next());
+        CustomerDetails cd=new
+        CustomerDetails(customerId,customerName,phoneNumber,emailId,toyType,price);
+        if(cd.validateCustomerId())
+        {
+            double amount=cd.calculateDiscount();
+            System.out.printf("Amount to be paid by the Customer %.2f",amount);
+            
+        }
+        else
+        {
+            System.out.println("Provide a proper Customer Id");
+            
+        }
+        
+    }
+	
+}
+
+--------------------------------------------------------------------------------------
+
+12.
+
+
+public class Car {
+    String carId;
+    String modelNumber;
+    String colour;
+    String transmissionType;
+    String fuelType;
+    String engineType;
+    String bodyType;
+    int engineDisplacement;
+    int bootSpace;
+    int seatCapacity;
+    public Car(String carId,String modelNumber,String colour,String transmissionType,String fuelType,String engineType,String bodyType,int engineDisplacement,int bootSpace,int seatCapacity)
+    {
+        this.carId=carId;
+        this.modelNumber=modelNumber;
+        this.colour=colour;
+        this.transmissionType=transmissionType;
+        this.fuelType=fuelType;
+        this.engineType=engineType;
+        this.bodyType=bodyType;
+        this.engineDisplacement=engineDisplacement;
+        this.bootSpace=bootSpace;
+        this.seatCapacity=seatCapacity;
+    }
+    public String getCarId()
+    {
+		return carId;
+	}
+	public void setCarId( String carId)
+	{
+		this.carId=carId;
+	}
+	public String getModelNumber() 
+	{
+		return modelNumber;
+	}
+	public void setModelNumber( String modelNumber)
+	{
+		this.modelNumber=modelNumber;
+	}
+	public String getColour() 
+	{
+		return colour;
+	}
+	
+	public void setColour( String colour) 
+	{
+		this.colour=colour;
+	}
+	public String getTransmissionType() 
+	{
+		return transmissionType;
+	}
+	
+	public void setTransmissionType( String transmissionType)
+	{
+		this.transmissionType=transmissionType;
+	}
+	public String getFuelType() {
+		return fuelType;
+	}
+	
+	public void setFuelType( String fuelType) {
+		this.fuelType=fuelType;
+	}
+	public String getEngineType() 
+	{
+		return engineType;
+	}
+	
+	public void setEngineType( String engineType) 
+	{
+		this.engineType=engineType;
+	}
+	public String getBodyType() 
+	{
+		return bodyType;
+	}
+	
+	public void setBodyType( String bodyType) 
+	{
+		this.bodyType=bodyType;
+	}
+	public int getEngineDisplacement()
+	{
+		return engineDisplacement;
+	}
+	public void setEngineDisplacement( int engineDisplacement) 
+	{
+		this.engineDisplacement=engineDisplacement;
+	}
+	public int getBootSpace() 
+	{
+		return bootSpace;
+	}
+	
+	public void setBootSpace( int bootSpace) 
+	{
+		this.bootSpace=bootSpace;
+	}
+	public int getSeatCapacity() 
+	{
+		return seatCapacity;
+	}
+	
+	public void setSeatCapacity( int seatCapacity)
+	{
+		this.seatCapacity=seatCapacity;
+	}
+	public void display(){
+	     
+		    System.out.println("Car Id "+carId);
+		    System.out.println("Model Number "+modelNumber);
+		    System.out.println("Colour "+colour);
+		    System.out.println("Transmission Type "+transmissionType);
+		    System.out.println("Fuel Type Diesel");
+		    System.out.println("Engine Type 7stroke");
+		    System.out.println("Body Type Hashpack");
+		    System.out.println("Engine Displacement "+engineDisplacement);
+		    System.out.println("Boot Space "+bootSpace);
+		    System.out.println("Seat Capacity "+seatCapacity);
+		
+	}
+
+}
+
+carutility.java
+
+import java.util.Scanner;
+
+public class CarUtility {
+    public static void main(String[] args)
+    {
+        Car[] car=createCarDetails();
+        System.out.println("No of Car Details "+car.length);
+        for(int i=0;i<car.length;i++)
+        {
+            System.out.println("Car Details "+(i+1));
+            System.out.println("Car Id "+car[i].getCarId());
+            System.out.println("Model Number "+car[i].getModelNumber());
+            System.out.println("Colour "+car[i].getColour());
+            System.out.println("Transmission Type "+car[i].getTransmissionType());
+            String fueltype=car[i].getFuelType();
+            fueltype=fueltype.substring(0,1).toUpperCase()+fueltype.substring(1);
+            System.out.println("Fuel Type "+fueltype);
+            String enginetype=car[i].getEngineType();
+            enginetype=enginetype.substring(0,1)+enginetype.substring(1).toLowerCase();
+            System.out.println("Engine Type "+enginetype);
+            String bodytype=car[i].getBodyType();
+            bodytype=bodytype.substring(0,1).toUpperCase()+bodytype.substring(1);
+            System.out.println("Body Type "+bodytype);
+            System.out.println("Engine Displacement "+car[i].getEngineDisplacement());
+            System.out.println("Boot Space "+car[i].getBootSpace());
+            System.out.println("Seat Capacity "+car[i].getSeatCapacity());
+            
+        }
+        
+    }
+    public static Car[] createCarDetails()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of car details to created ");
+        int N=sc.nextInt();
+        Car car[]=new Car[N];
+        for(int i=0;i<N;i++)
+        {
+            System.out.println("Enter Car Id");
+            String carId=sc.next();
+            System.out.println("Enter Model Number");
+            String modelNumber=sc.next();
+            System.out.println("Enter Colour");
+            String colour=sc.next();
+            System.out.println("Enter Transmission Type");
+            String transmissionType=sc.next();
+            System.out.println("Enter Fuel Type");
+            String fuelType=sc.next();
+            System.out.println("Enter Engine Type");
+            String engineType=sc.next();
+            System.out.println("Enter Body Type");
+            String bodyType=sc.next();
+            System.out.println("Enter Engine Displacement");
+            int engineDisplacement=sc.nextInt();
+            System.out.println("Enter Boot Space");
+            int bootSpace=sc.nextInt();
+            System.out.println("Enter Seat Capacity");
+            int seatCapacity = sc.nextInt();
+            car[i]=new
+            Car(carId,modelNumber,colour,transmissionType,fuelType,engineType,bodyType,engineDisplacement,bootSpace,seatCapacity);
+            
+        }
+        return car;
+        
+    }
+
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+13.
+
+public class CustomerDetails
+{
+    private String customerId;
+    private String customerName;
+    private long phoneNumber;
+    private String city;
+    private double unitsConsumed;
+    private double costPerUnit;
+    public CustomerDetails(String customerId,String customerName,long phoneNumber,String city,double unitsConsumed,double costPerUnit)
+    {
+        this.customerId=customerId;
+        this.customerName=customerName;
+        this.phoneNumber=phoneNumber;
+        this.city=city;
+        this.unitsConsumed=unitsConsumed;
+        this.costPerUnit=costPerUnit;
+        
+    }
+    public double calculateElectricityBill()
+    {
+        double unitsConsumed=getUnitsConsumed();
+        double costPerUnit=getCostPerUnit();
+        return unitsConsumed*costPerUnit;
+        
+    }
+    public String getCustomerId()
+    {
+        return this.customerId;
+        
+    }
+    public void setCustomerId(String customerId)
+    {
+        this.customerId=customerId;
+        
+    }
+    public String getCustomerName()
+    {
+        return this.customerName;
+        
+    }
+    public void setCustomerName(String customerName)
+    {
+        this.customerName=customerName;
+        
+    }
+    public long getPhoneNumber()
+    {
+        return this.phoneNumber;
+        
+    }
+    public void setPhoneNumber(long phoneNumber)
+    {
+        this.phoneNumber=phoneNumber;
+
+    }
+    public String getCity()
+    {
+        return this.city;
+        
+    }
+    public void setCity(String city)
+    {
+        this.city=city;
+        
+    }
+    public double getUnitsConsumed()
+    {
+        return this.unitsConsumed;
+        
+    }
+    public void setUnitsConsumed(double unitsConsumed)
+    {
+        this.unitsConsumed=unitsConsumed;
+        
+    }
+    public double getCostPerUnit()
+    {
+        return this.costPerUnit;
+        
+    }
+    public void setCostPerUnit(double costPerUnit)
+    {
+        this.costPerUnit=costPerUnit;
+        
+    }
+}
+
+
+main.java
+
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter Customer Id");
+String customerId=sc.next();
+System.out.println("Enter Customer Name");
+String customerName = sc.next();
+System.out.println("Enter Phone Number");
+long phoneNumber = sc.nextLong();
+System.out.println("Enter City");
+String city = sc.next();
+System.out.println("Enter Units Consumed");
+double unitsConsumed=sc.nextDouble();
+System.out.println("Enter Cost per Unit");
+double costPerUnit=sc.nextDouble();
+CustomerDetails c=new
+CustomerDetails(customerId,customerName,phoneNumber,city,unitsConsumed,costPerUnit);
+System.out.printf("Amount to be paid is Rs.%.2f",c.calculateElectricityBill());
+
+}
+}
+
+--------------------------------------------------------------------------------------------
+
+14.
+
+import java.util.Scanner;
+public class Main 
+{ 
+    public static void main(String[] arg)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter movie name");
+        String str= scanner.nextLine();
+        System.out.println("Enter no of bookings");
+        int bookings = scanner.nextInt();
+        
+        System.out.println("Enter the available tickets");
+        int availableTickets = scanner.nextInt();
+        
+        Ticket ticket = new Ticket();
+        ticket.setAvailableTickets(availableTickets);
+        
+    for (int i = 0; i < bookings; ++i) {
+        System.out.println("Enter the ticketid");
+        int ticketId = scanner.nextInt();
+        
+        System.out.println("Enter the price");
+        int price = scanner.nextInt();
+        
+        System.out.println("Enter the no of tickets");
+        int tickets = scanner.nextInt();
+        
+        ticket.setTicketid(ticketId);
+        ticket.setPrice(price);
+        
+        System.out.println("Available tickets: " + ticket.getAvailableTickets());
+        
+        
+        int cost = ticket.calculateTicketCost(tickets);
+        if(cost>0){
+        System.out.println("Total amount:" + cost);}
+        else{
+            System.out.println("Tickets are not available");
+            return;
+        }if(ticket.getAvailableTickets()==0){
+            System.out.println("House full");
+        }else{
+            System.out.println("Available ticket after booking:" + ticket.getAvailableTickets());
+        }}
+    }
+}
+
+ticket.java
+
+import java.util.Scanner;
+public class Main 
+{ 
+    public static void main(String[] arg)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter movie name");
+        String str= scanner.nextLine();
+        System.out.println("Enter no of bookings");
+        int bookings = scanner.nextInt();
+        
+        System.out.println("Enter the available tickets");
+        int availableTickets = scanner.nextInt();
+        
+        Ticket ticket = new Ticket();
+        ticket.setAvailableTickets(availableTickets);
+        
+    for (int i = 0; i < bookings; ++i) {
+        System.out.println("Enter the ticketid");
+        int ticketId = scanner.nextInt();
+        
+        System.out.println("Enter the price");
+        int price = scanner.nextInt();
+        
+        System.out.println("Enter the no of tickets");
+        int tickets = scanner.nextInt();
+        
+        ticket.setTicketid(ticketId);
+        ticket.setPrice(price);
+        
+        System.out.println("Available tickets: " + ticket.getAvailableTickets());
+        
+        
+        int cost = ticket.calculateTicketCost(tickets);
+        if(cost>0){
+        System.out.println("Total amount:" + cost);}
+        else{
+            System.out.println("Tickets are not available");
+            return;
+        }if(ticket.getAvailableTickets()==0){
+            System.out.println("House full");
+        }else{
+            System.out.println("Available ticket after booking:" + ticket.getAvailableTickets());
+        }}
+    }
+}
